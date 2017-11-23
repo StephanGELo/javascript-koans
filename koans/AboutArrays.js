@@ -66,7 +66,7 @@ describe("About Arrays", function() {
 
     var assignedArray = array;
     assignedArray[5] = "changed in assignedArray";
-    expect(array[5]).toBe("five");
+    expect(array[5]).toBe("changed in assignedArray");
 
     var copyOfArray = array.slice();
     copyOfArray[3] = "changed in copyOfArray";
@@ -77,7 +77,7 @@ describe("About Arrays", function() {
     var array = [1, 2];
     array.push(3);
 
-    expect(array).toEqual([1, 2, 3];
+    expect(array).toEqual([1, 2, 3]);
     
     var poppedValue = array.pop();
     expect(poppedValue).toBe(3);
